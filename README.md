@@ -16,3 +16,8 @@ Eclipse
 ## Python
 --------------------------------
 Anaconda
+
+# Commit message rules
+```
+[site name] messages (languages)
+```

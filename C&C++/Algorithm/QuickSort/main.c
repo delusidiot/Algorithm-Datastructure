@@ -2,7 +2,7 @@
 
 int main(int argc, char* argv[])
 {
-	int arr[5] = { 1,2,3,5,3 };
+	int arr[5] = { 1,2,4,5,3 };
 	for (int i = 0; i < ARR_SIZE; i++) {
 		printf("%d ", arr[i]);
 	}

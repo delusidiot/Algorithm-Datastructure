@@ -37,5 +37,6 @@ public class Solution_2056 {
 			else
 				System.out.println("-1");
 		}
+		br.close();
 	}
 }

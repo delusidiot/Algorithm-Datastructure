@@ -22,7 +22,7 @@ public class Solution_2070 {
 			System.out.println("#" + test_case + " " + sign);
 			
 		}
-
+		br.close();
 	}
 
 }

@@ -13,5 +13,6 @@ public class Solution_2063 {
 		int[] line = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
 		Arrays.sort(line);
 		System.out.println(line[T / 2]);
+		br.close();
 	}
 }

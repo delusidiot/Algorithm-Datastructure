@@ -20,7 +20,7 @@ public class Solution_2068 {
 			System.out.println("#" + test_case + " " + max);
 			
 		}
-
+		br.close();
 	}
 
 }

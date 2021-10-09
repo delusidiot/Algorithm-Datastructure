@@ -10,5 +10,6 @@ public class Solution_2046 {
 		for (int i = 0; i < T; i++) {
 			System.out.print("#");
 		}
+		sc.close();
 	}
 }

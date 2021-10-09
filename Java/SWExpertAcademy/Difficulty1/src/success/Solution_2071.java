@@ -14,5 +14,6 @@ public class Solution_2071 {
 			}
 			System.out.println("#" + i + " " + ((total % 10 >= 5) ? (total / 10) + 1 : (total / 10)));
 		}
+		br.close();
 	}
 }

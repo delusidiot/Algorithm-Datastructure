@@ -13,5 +13,6 @@ public class Solution_2025 {
 			total += i;
 		}
 		System.out.println(total);
+		br.close();
 	}
 }

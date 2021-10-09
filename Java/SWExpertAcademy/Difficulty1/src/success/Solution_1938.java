@@ -13,5 +13,6 @@ public class Solution_1938 {
 				+ (num[0] - num[1]) +"\n"
 				+ (num[0] * num[1]) +"\n"
 				+ (num[0] / num[1]));
+		br.close();
 	}
 }

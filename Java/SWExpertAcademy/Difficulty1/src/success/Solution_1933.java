@@ -10,5 +10,6 @@ public class Solution_1933 {
 			if (N % i == 0)
 				System.out.print(i + " ");
 		}
+		br.close();
 	}
 }

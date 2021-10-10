@@ -11,7 +11,7 @@ public class Solution_2007 {
 		Integer T = Integer.parseInt(br.readLine().trim());
 		for (int test_case = 1; test_case <= T; test_case++) {
 			String line = br.readLine().trim();
-			int max = 0;
+			int min = 0;
 			for (int i = 1; i <= line.length(); i++) {
 				String sub = line.substring(0, i);
 				boolean check = true;
@@ -23,11 +23,11 @@ public class Solution_2007 {
 					}
 				}
 				if (check) {
-					max = i;
+					min = i;
 					break;
 				}
 			}
-			System.out.println("#" + test_case + " " + max);
+			System.out.println("#" + test_case + " " + min);
 		}
 		br.close();
 	}

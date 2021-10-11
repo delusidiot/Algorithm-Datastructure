@@ -11,7 +11,7 @@ public class Solution_2005 {
 		Integer T = Integer.parseInt(br.readLine().trim());
 		for (int test_case = 1; test_case <= T; test_case++) {
 			Integer N = Integer.parseInt(br.readLine().trim());
-			int[] arr = new int[11];
+			int[] arr = new int[N];
 			Arrays.fill(arr, 1);
 			System.out.println("#" + test_case);
 			for (int i = 1; i <= N; i++) {

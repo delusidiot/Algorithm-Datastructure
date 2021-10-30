@@ -16,7 +16,5 @@ public class Solution_1285 {
 			long count = Arrays.stream(distance).filter(n -> n == distance[0]).count();
 			System.out.printf("#%d %d %d", test_case, distance[0], count);
 		}
-
 	}
-
 }

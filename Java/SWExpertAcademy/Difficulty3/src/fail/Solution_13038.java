@@ -6,7 +6,6 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 
 public class Solution_13038 {
-
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		Integer T = Integer.parseInt(br.readLine().trim());
@@ -19,9 +18,8 @@ public class Solution_13038 {
 			int i = 0;
 			for (i = 0; i < 7; i++) {
 				weekly += a[i];
-				if (start == -1 && a[i] == 1) {
+				if (start == -1 && a[i] == 1)
 					start = i;
-				}
 			}
 			lesson -= start;
 			if (n % weekly == 0) {
@@ -34,9 +32,8 @@ public class Solution_13038 {
 			}
 			i = 0;
 			while (n > 0) {
-				if (a[i % 7] == 1) {
+				if (a[i % 7] == 1)
 					n--;
-				}
 				i++;
 				lesson++;
 			}

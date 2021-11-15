@@ -25,7 +25,7 @@ public class Solution_5356 {
 					}
 				}
 			}
-			System.out.printf("#%d %s", test_case, sb.toString());
+			System.out.printf("#%d %s\n", test_case, sb.toString());
 		}
 
 	}

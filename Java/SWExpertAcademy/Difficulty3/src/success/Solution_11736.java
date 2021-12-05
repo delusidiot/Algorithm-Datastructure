@@ -21,10 +21,8 @@ public class Solution_11736 {
 			int count = 0;
 			for (int i = 2; i < p.length; i++) {
 				queue.add(p[i]);
-				if (Collections.max(queue) != p[i - 1] && Collections.min(queue) != p[i - 1]) {
-					System.out.println(queue);
+				if (Collections.max(queue) != p[i - 1] && Collections.min(queue) != p[i - 1])
 					count++;
-				}
 				queue.poll();
 			}
 			System.out.printf("#%s %d\n", test_case, count);

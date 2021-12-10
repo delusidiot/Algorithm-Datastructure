@@ -11,13 +11,13 @@ public class Solution_5642 {
 			int N = Integer.parseInt(br.readLine().trim());
 			int[] numbers = Arrays.stream(br.readLine().trim().split(" ")).mapToInt(Integer::parseInt).toArray();
 			int total = numbers[0];
-			for (int i = 2; i <= N; i++) {
-				if (numbers[i - 1] >= 0 && (numbers[i - 1] + numbers[i] >= 0))
+			for (int i = 1; i < N; i++) {
+				if (numbers[i - 1] > 0 && (numbers[i - 1] + numbers[i] > 0))
 					numbers[i] += numbers[i - 1];
 				if (total < numbers[i])
 					total = numbers[i];
 			}
-			System.out.printf("#%d %d", test_case, total);
+			System.out.printf("#%d %d\n", test_case, total);
 		}
 	}
 }

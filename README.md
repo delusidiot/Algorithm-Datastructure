@@ -1,7 +1,5 @@
 # Algorithm & Datastructure
 
-각각의 gitignore 템플릿
-
 ## C&C++
 ------------------------------
 Visual Studio 2019
@@ -18,6 +16,7 @@ Eclipse
 Anaconda
 
 # Commit message rules
+Algorithm tests
 ```
 [site name] messages (languages)
 ```

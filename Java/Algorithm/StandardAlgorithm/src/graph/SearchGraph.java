@@ -38,12 +38,11 @@ public class SearchGraph {
 		graph.addEdge(1, 2);
 		graph.addEdge(2, 0);
 		graph.addEdge(2, 3);
-		graph.addEdge(3, 3);
+		graph.addEdge(4, 5);
 		graph.printGraph();
 		BFS(graph, 1);
 		System.out.println();
 		DFS(graph, 1, new boolean[graph.getGraph().size()]);
 		System.out.println();
 	}
-
 }

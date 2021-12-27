@@ -8,12 +8,18 @@ import java.util.Set;
 public class UndirectedGraph implements Graph{
 	
 	private Map<Integer, Set<Integer>> map;
+	private Set<Integer> nodes;
 	
 	public UndirectedGraph() {
 		map = new HashMap<Integer, Set<Integer>>();
+		nodes = new HashSet<Integer>();
 	}
 	
 	public void addEdge(int u, int v) {
+		if (!nodes.contains(u))
+			nodes.add(u);
+		if (!nodes.contains(v))
+			nodes.add(v);
 		if (!map.containsKey(u))
 			map.put(u, new HashSet<>());
 		if (!map.containsKey(v))
@@ -26,6 +32,13 @@ public class UndirectedGraph implements Graph{
         System.out.println(map);
     }
 	
+	public Set<Integer> getNodes(){
+		return nodes;
+	}
+	
+	public int getNodeSize() {
+		return nodes.size();
+	}
 	
 	public Map<Integer, Set<Integer>> getGraph() {
 		return map;

@@ -1,4 +1,4 @@
-package patternSerching;
+package patternSearching;
 
 import java.util.HashSet;
 import java.util.Set;

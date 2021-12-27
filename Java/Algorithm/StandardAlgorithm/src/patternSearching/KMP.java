@@ -1,4 +1,4 @@
-package patternSerching;
+package patternSearching;
 
 public class KMP {
 	void KMPSearch(String pat, String txt)

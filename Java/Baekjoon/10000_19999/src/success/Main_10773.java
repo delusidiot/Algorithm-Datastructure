@@ -20,5 +20,4 @@ public class Main_10773 {
 		}
 		System.out.println(stack.stream().mapToInt(n->n).sum());
 	}
-
 }

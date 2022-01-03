@@ -19,9 +19,6 @@ public class Main_1463 {
 				arr[i] = Math.min(arr[i],  arr[i / 3] + 1);
 			
 		}
-		for (int i = 1; i <= X; i++) {
-			System.out.print(arr[i] + " ");
-		}
 		System.out.println(arr[X]);
 	}
 }

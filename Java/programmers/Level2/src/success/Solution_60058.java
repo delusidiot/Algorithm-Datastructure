@@ -4,7 +4,8 @@ import java.util.Stack;
 
 /**
  * 괄호 변환
- * 
+ * 괄호갯수가 맞지 않을때, 다른 문자가 들어가 있을때 Exception 처리된 project이므로 Programmers에선 에러가 뜹니다.
+ * 아래 주석처리된 코드가 실제 Programmers에서 실행될 수 있는 코드입니다.
  */
 
 public class Solution_60058 {
@@ -42,7 +43,7 @@ public class Solution_60058 {
 		}
 		
 		private boolean isCorrect(String str) throws Exception {
-			boolean resultValue = true;
+			this.check = true;
 			int left = 0;
 			int right = 0;
 			Stack<Character> stack = new Stack<>();
@@ -55,9 +56,11 @@ public class Solution_60058 {
 				case ')':
 					right++;
 					if (stack.isEmpty())
-						resultValue = false;
+						this.check = false;
 					else
 						stack.pop();
+				default:
+					throw new Exception();
 				}
 				if (left == right) {
 					setUV(i + 1);
@@ -67,7 +70,7 @@ public class Solution_60058 {
 			throw new Exception();
 		}
 		
-		public String getParenthesis() {
+		public String getParenthesis() throws Exception {
 			StringBuilder sb = new StringBuilder();
 			sb.append("(");
 			sb.append(solution(getV()));
@@ -98,4 +101,55 @@ public class Solution_60058 {
 			return this.v;
 		}
 	}
+	/*
+	private int pos;
+
+    private boolean isCorrect(String str) {
+        boolean resultValue = true;
+        int left = 0;
+        int right = 0;
+        Stack<Character> stack = new Stack<>();
+        for (int i = 0; i < str.length(); i++) {
+            switch(str.charAt(i)) {
+            case '(':
+                left++;
+                stack.push('(');
+                break;
+            case ')':
+                right++;
+                if (stack.isEmpty())
+                    resultValue = false;
+                else
+                    stack.pop();
+            }
+            if (left == right) {
+                pos = i + 1;
+                break;
+            }
+        }
+        return resultValue;
+    }
+
+    public String solution(String p) {
+        if (p.equals("") || p.isEmpty())
+            return "";
+        StringBuilder sb = new StringBuilder();
+        boolean correct = isCorrect(p);
+        String u = p.substring(0, pos);
+        String v = p.substring(pos, p.length());
+        if (correct) {
+            return u + solution(v);
+        }
+        sb.append("(");
+        sb.append(solution(v));
+        sb.append(")");
+        for (int i = 1; i < u.length() - 1; i++) {
+            if (u.charAt(i) == '(')
+                sb.append(")");
+            else
+                sb.append("(");
+        }
+        return sb.toString();
+    }
+    */
 }

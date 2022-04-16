@@ -36,6 +36,8 @@ public class AddTwoNumbers {
 			next = (current + next) / 10;
 			curr = curr.next;
 		}
+		if (next != 0)
+			curr.next = new ListNode(next);
 		return root.next;
     }
 	public static class ListNode {

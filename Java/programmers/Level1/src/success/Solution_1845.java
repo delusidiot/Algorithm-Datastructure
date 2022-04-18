@@ -17,7 +17,6 @@ public class Solution_1845 {
 		System.out.println(solution.solution(nums));
 	}
 	public int solution(int[] nums) {
-		Set<Integer> set = Arrays.stream(nums).boxed().collect(Collectors.toSet());
-        return (nums.length / 2 <= set.size())? nums.length / 2: set.size();
+        return Math.min(nums.length / 2, Arrays.stream(nums).boxed().collect(Collectors.toSet()).size());
     }
 }

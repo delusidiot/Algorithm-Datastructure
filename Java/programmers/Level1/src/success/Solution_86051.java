@@ -1,6 +1,6 @@
 package success;
 
-import java.util.HashSet;
+import java.util.Arrays;
 
 public class Solution_86051 {
 
@@ -9,6 +9,6 @@ public class Solution_86051 {
 
 	}
 	public int solution(int[] numbers) {
-        return 55 - new HashSet<Integer>(numbers).stream().mapToInt(Integer::intValue).sum();
+        return 55 - Arrays.stream(numbers).distinct().sum();
     }
 }

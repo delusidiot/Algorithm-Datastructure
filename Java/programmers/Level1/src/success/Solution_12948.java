@@ -13,6 +13,7 @@ public class Solution_12948 {
 
 	}
 	public String solution(String phone_number) {
+		// phone_number.replaceAll(".(?=.{4})", "*");
         return "*".repeat(phone_number.length() - 4) + phone_number.substring(phone_number.length() - 4, phone_number.length());
     }
 }

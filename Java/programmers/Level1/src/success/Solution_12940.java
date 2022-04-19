@@ -11,7 +11,7 @@ public class Solution_12940 {
 
 	public static void main(String[] args) {
 		Solution_12940 solution = new Solution_12940();
-		System.out.println(Arrays.toString(solution.solution(3, 12)));
+		System.out.println(Arrays.toString(solution.solution(12, 3)));
 	}
 	public int[] solution(int n, int m) {
         int[] answer = new int[2];

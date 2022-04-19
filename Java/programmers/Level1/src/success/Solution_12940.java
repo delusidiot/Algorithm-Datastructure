@@ -21,8 +21,7 @@ public class Solution_12940 {
     }
 	
 	private int gcd(int n, int m) {
-		if (m == 0) return n;
-		return gcd(m, n % m);
+		return (m == 0) ? n : gcd(m, n % m);
 	}
 
 }

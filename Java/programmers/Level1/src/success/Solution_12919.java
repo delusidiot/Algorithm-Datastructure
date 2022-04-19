@@ -1,4 +1,7 @@
 package success;
+
+import java.util.Arrays;
+
 /**
  * 서울에서 김서방 찾기
  * @author delusidiot
@@ -12,10 +15,6 @@ public class Solution_12919 {
 		System.out.println(solution.solution(seoul));
 	}
 	public String solution(String[] seoul) {
-        for (int i = 0; i < seoul.length; i++) {
-        	if (seoul[i].equals("Kim"))
-        		return "김서방은 " + i + "에 있다";
-        }
-        return "김서방은 없다";
+        return "김서방은 " + Arrays.asList(seoul).indexOf("Kim") + "에 있다";
     }
 }

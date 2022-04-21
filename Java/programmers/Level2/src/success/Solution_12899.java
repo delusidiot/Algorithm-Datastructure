@@ -1,5 +1,9 @@
 package success;
-
+/**
+ * 124나라의 숫자
+ * @author delusidiot
+ *
+ */
 public class Solution_12899 {
 	
 	public static void main(String[] args) {

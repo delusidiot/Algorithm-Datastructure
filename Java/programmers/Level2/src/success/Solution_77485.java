@@ -1,7 +1,11 @@
 package success;
 
 import java.util.Arrays;
-
+/**
+ * 행렬 테두리 회전하기
+ * @author delusidiot
+ *
+ */
 public class Solution_77485 {
 
 	public static void main(String[] args) {

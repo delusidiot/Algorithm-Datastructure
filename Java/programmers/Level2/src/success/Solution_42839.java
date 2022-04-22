@@ -1,18 +1,18 @@
 package success;
 
-import java.util.Arrays;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 import java.util.stream.IntStream;
 
+/**
+ * 소수 찾기
+ * @author delusidiot
+ *
+ */
 public class Solution_42839 {
 
 	static int answer = 0;
 	public static void main(String[] args) {
-		String[] numbers = {"17"};
-		Integer[] answers = {3};
-		Test test = new Test(numbers, answers);
 		Solution_42839 solution = new Solution_42839();
 		
 		System.out.println(solution.solution("011"));
@@ -54,14 +54,5 @@ public class Solution_42839 {
 				return false;
 		}
 		return true;
-	}
-}
-
-class Test{
-	List<String> numbers;
-	List<Integer> answers;
-	public Test(String[] num, Integer[] ans){
-		numbers = Arrays.asList(num);
-		answers = Arrays.asList(ans);
 	}
 }

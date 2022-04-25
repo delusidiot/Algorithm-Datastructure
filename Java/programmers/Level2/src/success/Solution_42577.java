@@ -2,7 +2,11 @@ package success;
 
 import java.util.*;
 import java.util.stream.Collectors;
-
+/**
+ * 전화번호 목록
+ * @author delusidiot
+ *
+ */
 public class Solution_42577 {
 
 	public static void main(String[] args) {

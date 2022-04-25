@@ -59,4 +59,53 @@ public class Solution_17677 {
 				.mapToInt(Long::intValue)
 				.sum();
 	}
+	
+	/**
+	 * programmers 제출시 사용한 코드
+	 * 
+	 */
+	public int beforeSolution(String str1, String str2) {
+        if (str1.length() < 2 || str2.length() < 2)
+            return 65536;
+        Map<String, Integer> str1Map = new HashMap<String, Integer>();
+        Map<String, Integer> str2Map = new HashMap<String, Integer>();
+        for (int i = 0; i < str1.length() - 1; i++) {
+            String element = str1.substring(i, i + 2).toUpperCase();
+            if (!element.matches("^[a-zA-Z]*$"))
+                continue;
+            if (str1Map.containsKey(element)) {
+                str1Map.put(element, str1Map.get(element) + 1);
+            }
+            else
+                str1Map.put(element, 1);
+        }
+
+        for (int i = 0; i < str2.length() - 1; i++) {
+            String element = str2.substring(i, i + 2).toUpperCase();
+            if (!element.matches("^[a-zA-Z]*$"))
+                continue;
+            if (str2Map.containsKey(element)) {
+                str2Map.put(element, str2Map.get(element) + 1);
+            }
+            else
+                str2Map.put(element, 1);
+        }
+        Map<String, Integer> intersection = new HashMap<String, Integer>();
+        Map<String, Integer> union = new HashMap<String, Integer>(str1Map);
+        str2Map.forEach((key, value) -> {
+            union.merge(key, value, (v1, v2) -> {
+                return (v1 > v2) ? v1 : v2;
+            });
+        });
+        str2Map.forEach((key, value) -> {
+            if (str1Map.containsKey(key)) {
+                intersection.put(key, Math.min(value, str1Map.get(key)));
+            }
+        });
+        double str1Result = intersection.values().stream().reduce((x,y) -> x+y).orElse(0);
+        double str2Result = union.values().stream().reduce((x, y) -> x + y).orElse(0);
+        if (str2Result == 0)
+            return 65536;
+        return (int)(65536.0 * (str1Result / str2Result));
+    }
 }

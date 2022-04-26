@@ -2,7 +2,11 @@ package success;
 
 import java.util.LinkedList;
 import java.util.Queue;
-
+/**
+ * 게임 맵 최단거리
+ * @author delusidiot
+ *
+ */
 public class Solution_1844 {
 	
 	int[] dx = {1,-1,0,0};

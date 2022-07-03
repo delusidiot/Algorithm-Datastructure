@@ -13,10 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\list">
+      <UniqueIdentifier>{2fc815ad-0576-4479-81a2-068f088b6640}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\list">
+      <UniqueIdentifier>{45bdebb5-9a90-4ef5-a7d8-cb8e1a3a6e8c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DataStructure.cpp">
+    <ClCompile Include="DataStructure.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="arraylist.c">
+      <Filter>소스 파일\list</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="arraylist.h">
+      <Filter>헤더 파일\list</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

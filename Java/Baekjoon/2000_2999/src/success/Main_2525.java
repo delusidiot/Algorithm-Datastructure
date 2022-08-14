@@ -14,6 +14,5 @@ public class Main_2525 {
 		time[1] = time[1] % 60;
 		time[0] = time[0] % 24;
 		System.out.println(time[0] + " " + time[1]);
-		br.close();
 	}
 }

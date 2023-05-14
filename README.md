@@ -2,21 +2,18 @@
 
 ## C&C++
 ------------------------------
-Visual Studio 2019
+Visual Studio 2022
 
 ### SDN OFF
 project -> Properties -> Configuration Properties -> C/C++ -> SDL checks -> No
 
+
 ## Java
 --------------------------------
-Eclipse
-
-## Python
---------------------------------
-Anaconda
+Eclipse => IntelliJ
 
 # Commit message rules
-Algorithm tests
+Algorithm
 ```
 [site name] messages (languages)
 ```
